@@ -1,7 +1,6 @@
 import os
 import json
 import tempfile
-import pytest
 from converter.env_json_converter import env_to_json, json_to_env
 
 
@@ -29,11 +28,11 @@ def test_env_to_json():
     """
     # Sample .env contents
     env_contents = """KEY1=VALUE1
-KEY2=VALUE2
-KEY_WITH_SPACES = Value With Spaces
-# Commented Line
-KEY_WITH_EQUALS=Value=With=Equals
-"""
+                    KEY2=VALUE2
+                    KEY_WITH_SPACES = Value With Spaces
+                    # Commented Line
+                    KEY_WITH_EQUALS=Value=With=Equals
+                    """
 
     # Create a temporary .env file
     env_file = create_temp_file(env_contents, ".env")
