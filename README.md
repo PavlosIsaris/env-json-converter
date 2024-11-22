@@ -69,23 +69,38 @@ chmod +x setup.sh
 
 ## Usage 🖥️
 
+## Arguments Explanation
+
+- `env-to-json`: Converts a `.env` file to JSON.
+- `json-to-env`: Converts a JSON file to a `.env` file.
+
+### Arguments for env-to-json transformation
+
+- `/path/to/your/.env`: The path to your `.env` file.
+- `/path/to/save/output.json`: The path to save the output JSON file.
+
+### Arguments for json-to-env transformation
+
+- `/path/to/your.json`: The path to your JSON file.
+- `/path/to/save/output.env`: The path to save the output `.env` file.
+
 ### CLI Usage
 
-After installation, you can use the `env-json` command:
+After installation, you can use the `converter/env-json-converter.py` script:
 
 #### Convert .env to JSON
 
 ```bash
-env-json env-to-json /path/to/your/.env /path/to/save/output.json
+python converter/env-json-converter.py env-to-json /path/to/your/.env /path/to/save/output.json
 ```
 
 #### Convert JSON to .env
 
 ```bash
-env-json json-to-env /path/to/your.json /path/to/save/output.env
+python converter/env-json-converter.py json-to-env /path/to/your.json /path/to/save/output.env
 ```
 
-#### As a Python Library
+### As a Python Library
 
 You can also use the package in your Python code:
 
