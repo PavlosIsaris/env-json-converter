@@ -1,0 +1,7 @@
+# For testing and development
+pytest>=7.0
+coverage>=6.0
+
+# For linting and formatting (optional)
+flake8>=5.0
+black>=23.0
