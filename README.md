@@ -1,4 +1,4 @@
-# Env-JSON Converter - a simple, secure, and privacy-oriented `.env` converter 🛠️🔄
+# Env-JSON Converter: a privacy-oriented Python utility to convert `.env` files to JSON and vice-versa. 🛠️🔄
 
 **Env-JSON Converter** is a simple, secure, and privacy-oriented Python utility that allows you to convert `.env` files to JSON and vice
 versa. Unlike online tools, this package ensures your sensitive information (like API keys and secrets) remains private
